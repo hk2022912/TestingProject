@@ -1,3 +1,0 @@
-# TestingProject
-
-# Hello World 
