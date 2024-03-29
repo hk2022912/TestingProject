@@ -1,4 +1,47 @@
-body {
+body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+*{
+    width: 100%;
+}
+
+header{
+    padding: 2px;
+    background-color: #F9AF08;
+    display: absolute;
+}
+
+header .menu{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+}
+
+header h1 a{
+    text-decoration: none;
+    font-family: nunito, sans-serif;
+    margin-left: 30px;
+    color: #EA0B03;
+
+}
+
+nav.choices ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .choices a{
+    text-decoration: none;
+}
+
+header .choices li{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    color: #FCF8E3;
+}
+
