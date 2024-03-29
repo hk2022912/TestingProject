@@ -1,47 +1,96 @@
-body{
-    margin: 0;
-    padding: 0;
+*{
+	margin:0;
+	padding:0;    
     box-sizing: border-box;
 }
 
-*{
+body{
+    background-color: #FCF8E3;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100%vh;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #FF9000; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    z-index: 1000;
+}
+
+section nav .logo img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #0E0A52;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;    
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
     width: 100%;
 }
 
-header{
-    padding: 2px;
-    background-color: #F9AF08;
-    display: absolute;
+section nav ul li a:hover {
+    color: white;
 }
 
-header .menu{
+
+.carousel-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    width: 100%;
+    height: 400px;
     display: flex;
+    align-items: center;
     position: absolute;
-    justify-content: space-between;
-}
-
-header h1 a{
-    text-decoration: none;
-    font-family: nunito, sans-serif;
-    margin-left: 30px;
-    color: #EA0B03;
-
-}
-
-nav.choices ul{
-    display: flex;
-    justify-content: flex-end;
-}
-
-header .choices a{
-    text-decoration: none;
-}
-
-header .choices li{
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    color: #FCF8E3;
-}
-
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
