@@ -195,7 +195,7 @@ section p{
 }
 
 .menu h1 a {
-    text-decoration: none; /* Add this line to remove underline */
+    text-decoration: none; 
 }
 
 .menu h1 span{
