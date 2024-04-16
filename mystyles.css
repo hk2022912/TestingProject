@@ -144,9 +144,10 @@ section p{
     top: 100px;
 }
 
-.about .about_main .about_text h1 span a{
+.about .about_main .about_text h1 span a {
     text-decoration: none;
 }
+
 
 .about .about_main .about_text h1{
     font-size: 50px;
@@ -191,6 +192,10 @@ section p{
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+}
+
+.menu h1 a {
+    text-decoration: none; /* Add this line to remove underline */
 }
 
 .menu h1 span{
