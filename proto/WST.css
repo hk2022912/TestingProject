@@ -334,6 +334,19 @@ section .main_btn:hover i{
 }
 
 
+.Slideshow{
+    display: flex;
+    justify-content: right;
+    background-color: #FCF8E3;
+    padding: 30px 0;
+}
+
+.slide{
+    border: 20px solid #F36C21;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);}
+
+
 
 /*Gallery*/
 
