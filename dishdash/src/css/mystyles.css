@@ -6,6 +6,7 @@
 
 body{
     background-color: #fff  ;
+    font-family: nunito, sans-serif;
 }
 
 html{
@@ -22,12 +23,14 @@ section nav {
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    top: 0;
     right: 0;
     left: 0;
     background-color: #F36C21; 
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     z-index: 1000;
 }
+
 
 section nav .logo img{
     width: 60px;
@@ -174,15 +177,20 @@ section p{
 
 .Slideshow{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     background-color: #FCF8E3;
-    padding: 30px 0;
+    padding: 50px ;
 }
+
+
 
 .slide{
     border: 20px solid #F36C21;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);}
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    
+}
+
 
 
 /*Menu*/
@@ -301,9 +309,13 @@ section p{
 }
 
 .menu .menu_box .menu_card .menu_info p{
-    text-align: center;
-    margin-top: 8px;
+    text-align: justify;
+    margin: 15px;
     line-height: 21px;
+}
+.menu .menu_box .menu_card .menu_info a{
+    text-decoration: none;
+    margin-left: -50%;
 }
 
 .menu .menu_box .menu_card .menu_info h3{
